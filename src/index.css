@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	color: black;
+	background: linear-gradient(45deg, #83cfb5, #e0f3ed);
+}
+
+.app {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+}
+.content_title {
+	font-weight: 700;
+	font-size: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.content_description {
+	font-weight: 400;
+	font-size: 20px;
+	opacity: 0.9;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form .form_input {
+	max-width: 500px;
+	min-width: 300px;
+	height: 38px;
+	background: white;
+	outline: none;
+	border: none;
+	text-indent: 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+}
+.form .form_input:focus {
+	outline: 2px solid #009d71;
+}
+.form .form_button {
+	width: 100px;
+	height: 30px;
+	background: #009d71;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 3rem;
+	border-radius: 3px;
+}
+.form .form_button:hover {
+	background-color: #007f56;
+}
+
+.download_btn {
+	padding: 1rem 2rem;
+	background: #009d71;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 3rem;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.download_btn:hover {
+	background-color: #007f56;
+}
+
+.download_title {
+	margin-bottom: 1rem;
+}
+
+.text-error {
+	color: red;
+}
+
+@media screen and (max-width: 600px) {
+	.content {
+		margin-top: 10rem;
+	}
+	.content_title {
+		font-size: 40px;
+	}
+}
